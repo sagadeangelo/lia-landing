@@ -1,0 +1,163 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TÍTULO SEO -->
+  <title>Blog Editorial | Consejos de Publicación y Escritura – La Saga de Ángelo</title>
+
+  <!-- META DESCRIPCIÓN -->
+  <meta name="description" content="Lee artículos sobre autopublicación, escritura, motivación para autores y branding literario. Recomendado para escritores independientes y creativos.">
+
+  <!-- PALABRAS CLAVE -->
+  <meta name="keywords" content="blog editorial, publicación de libros, consejos de autor, Amazon KDP, escritura creativa, autopublicar, productividad escritor, La Saga de Ángelo">
+
+  <!-- AUTOR -->
+  <meta name="author" content="Miguel Tovar Amaral" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- FAVICON -->
+  <link rel="icon" href="images/favico.png" type="image/png" />
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    .banner-blog {
+      background-image: url("../images/blog-banner.png");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-texto {
+      position: absolute;
+      bottom: 20px;
+      left: 40px;
+      color: #fff;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .contenedor {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #ffd700;
+    }
+
+    .tarjetas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .tarjeta {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+    }
+
+    .tarjeta img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tarjeta .contenido {
+      padding: 20px;
+    }
+
+    .tarjeta h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #f39c12;
+    }
+
+    .tarjeta p {
+      font-size: 15px;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .btn-leer {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f39c12;
+      color: #000;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .btn-leer:hover {
+      background-color: #e67e22;
+      color: #fff;
+    }
+  </style>
+<script src="config.js"></script>
+</head>
+
+
+<body>
+  <!-- Banner superior del blog -->
+  <section class="banner-blog">
+    <div class="banner-texto">
+      <h1>Blog Semanal</h1>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <h1>Explora Nuestro Blog</h1>
+
+    <div class="tarjetas">
+
+      <!-- Tarjeta 1 -->
+      <div class="tarjeta">
+        <img src="images/procrastinacion1.png" alt="Consejos contra la procrastinación">
+        <div class="contenido">
+          <h3>10 Consejos para evitar la procrastinación</h3>
+          <p>Descubre estrategias prácticas para dejar de postergar y lograr tus metas con más claridad.</p>
+          <a href="blog-procrastinacion.html" class="btn-leer">Leer más</a>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="tarjeta">
+        <img src="images/procastinacion4.png" alt="Publica tu libro en KDP">
+        <div class="contenido">
+          <h3>20 pasos para publicar tu libro en Amazon</h3>
+          <p>Una guía paso a paso para escritores independientes que desean autopublicarse con éxito.</p>
+          <a href="blog-kdp.html" class="btn-leer">Leer más</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

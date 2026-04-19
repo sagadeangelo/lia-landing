@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TÍTULO SEO OPTIMIZADO -->
+  <title>LIA | Plataforma para Escritores: Escribir, Leer y Publicar Libros con IA</title>
+
+  <!-- META DESCRIPCIÓN -->
+  <meta name="description"
+    content="LIA es la plataforma de creación y lectura con IA diseñada para autores independientes. Permite escribir con IA, crear libros automáticamente y publicar novelas en minutos sin conocimientos técnicos. Vive una lectura inmersiva.">
+
+  <!-- PALABRAS CLAVE -->
+  <meta name="keywords"
+    content="escribir con IA, plataforma para escritores, crear libros automáticamente, publicar libro, lectura inmersiva, libros, novelas, escritores independientes, ecosistema LIA">
+
+  <!-- AUTOR -->
+  <meta name="author" content="LIA by Miguel Tovar Amaral" />
+
+  <!-- ROBOTS -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- FAVICON -->
+  <link rel="icon" href="images/favico.png" type="image/png" />
+
+  <!-- FUENTES MODERNAS: Inter y Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js"></script>
+</head>
+
+<body class="lia-saas-theme">
+  <!-- NAVEGACIÓN -->
+  <header class="lia-header">
+    <div class="lia-container nav-container">
+      <div class="lia-logo-brand">
+        <img alt="LIA Logo" src="images/logo.png" />
+        <span class="lia-brand-name">LIA</span>
+      </div>
+      <nav class="lia-nav">
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#biblioteca">Biblioteca</a></li>
+          <li><a href="#vision">Visión</a></li>
+          <li><a href="#autor">El Proyecto</a></li>
+        </ul>
+      </nav>
+      <div class="lia-nav-actions">
+        <a href="#como-funciona" class="lia-btn lia-btn-primary">Comenzar gratis</a>
+        <button class="lia-burger-btn" id="burgerBtn" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="lia-hero">
+    <div class="lia-container">
+      <div class="hero-content">
+        <div class="hero-chip accent-handwritten">Para Autores Independientes</div>
+        <h1 class="hero-title">Escribe, publica y vive historias con <span>Inteligencia Artificial</span></h1>
+        <p class="hero-subtitle">
+          Convierte tus ideas en libros profesionales y transforma la lectura en experiencias inmersivas. <br>Publica en minutos, sin conocimientos técnicos.
+        </p>
+        <div class="hero-buttons">
+          <a href="#como-funciona" class="lia-btn lia-btn-primary">Crear mi libro</a>
+          <a href="#biblioteca" class="lia-btn lia-btn-secondary">Explorar biblioteca</a>
+        </div>
+        <div class="hero-mockup">
+          <img src="images/lia-mockup.png" alt="Mockup de la plataforma LIA mostrando el editor y lectura inmersiva con IA">
+          <div class="hero-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA / PARA ESCRITORES -->
+  <section id="como-funciona" class="lia-features">
+    <div class="lia-container">
+      <div class="section-header">
+        <h2>Del borrador a tu libro publicado en tiempo récord</h2>
+        <p>Escribe, estructura, diseña y prepara tu libro para publicar… todo en un solo lugar con IA.</p>
+      </div>
+
+      <div class="bento-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="bento-item glow-border">
+          <div class="bento-icon">✍️</div>
+          <h3>Escribe a la velocidad del pensamiento</h3>
+          <p>Fluye sin bloqueos. La IA mejora tu estilo, corrige tu texto y potencia tus ideas sin cambiar tu voz.</p>
+          <div class="demo-container" style="margin-top: 15px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-light);">
+            <video width="100%" controls poster="apps/lia-staylo/media/lia-staylo-poster.png" style="display: block;">
+              <source src="apps/lia-staylo/media/lia-staylo-trailer.mp4" type="video/mp4">
+              Tu navegador no soporta el tag de video.
+            </video>
+          </div>
+          <p style="font-size: 13px; color: var(--accent-secondary); margin-top: 10px; font-weight: 600;">✨ Tecnología ya disponible dentro de LIA</p>
+          <a href="apps/lia-staylo/index.html" target="_blank" style="font-size: 12px; color: var(--text-muted); text-decoration: underline;">Disponible en Microsoft Store</a>
+        </div>
+        <div class="bento-item glow-border">
+          <div class="bento-icon">📚</div>
+          <h3>Da forma a tu historia</h3>
+          <p>Organiza tramas, personajes y capítulos de forma clara. Convierte tus ideas en un manuscrito listo para publicar.</p>
+        </div>
+        <div class="bento-item glow-border">
+          <div class="bento-icon">🎨</div>
+          <h3>Portadas que atrapan miradas</h3>
+          <p>Crea diseños únicos y profesionales en minutos. Tu libro listo para destacar desde el primer vistazo.</p>
+        </div>
+      </div>
+
+      <div class="lia-publish-integration" style="margin-top: 30px; text-align: center; padding: 15px; background: rgba(124, 58, 237, 0.1); border-radius: 12px; border: 1px solid var(--accent-primary);">
+        <p style="margin: 0; font-weight: 600; font-size: 1.1rem; color: var(--text-main);">
+          👉 Todo está conectado y automatizado gracias al motor de <strong style="color: var(--accent-primary);">LIA-Publish</strong>.
+        </p>
+      </div>
+
+      <div class="immersive-transition" style="margin-top: 50px; padding: 40px; background: radial-gradient(circle at center, #1b1633 0%, var(--bg-main) 100%); border-radius: 20px; text-align: center; position: relative; overflow: hidden; border: 1px solid rgba(124, 58, 237, 0.2); box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+        <div style="position: absolute; top: -50px; left: -50px; width: 150px; height: 150px; background: var(--accent-secondary); filter: blur(80px); opacity: 0.2;"></div>
+        <div style="position: absolute; bottom: -50px; right: -50px; width: 150px; height: 150px; background: var(--accent-primary); filter: blur(80px); opacity: 0.2;"></div>
+        
+        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 10px; font-style: italic;">Pero tu historia no termina al publicarla…</p>
+        <h3 style="font-size: 2rem; margin-bottom: 15px; color: #fff;">🌌 Descubre la lectura inmersiva</h3>
+        <p style="color: var(--text-muted); max-width: 650px; margin: 0 auto; line-height: 1.6;">Convierte tu libro en una experiencia interactiva donde cada escena cobra vida con elementos visuales, sonido y narrativa expandida.</p>
+      </div>
+      
+      <div class="center-cta" style="margin-top: 40px;">
+        <a href="#biblioteca" class="lia-btn lia-btn-primary">Comenzar a escribir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIBLIOTECA DE LIA -->
+  <section id="biblioteca" class="lia-library">
+    <div class="lia-container">
+      <div class="section-header">
+        <h2>La Biblioteca de LIA</h2>
+        <p>Historias creadas, optimizadas y publicadas dentro del ecosistema LIA.</p>
+      </div>
+
+      <div class="library-grid">
+        <!-- Libro 1 -->
+        <article class="library-card">
+          <div class="library-card-img">
+            <img alt="Ángelo & El Proyecto Ditóx" src="images/LIBRO1_PORTADA_PSD.png" />
+          </div>
+          <div class="library-card-body">
+            <h3>Ángelo & El Proyecto Ditóx</h3>
+            <p>Un thriller de ciencia ficción donde Ángelo enfrenta una conspiración global que amenaza a la humanidad.</p>
+            <a class="lia-link-btn" href="libro1.html">Leer y vivir experiencia →</a>
+          </div>
+        </article>
+
+        <!-- Libro 2 -->
+        <article class="library-card">
+          <div class="library-card-img">
+            <img alt="Ángelo & Los Gadianes" src="images/LIBRO2_PORTADA_PSD.png" />
+          </div>
+          <div class="library-card-body">
+            <h3>Ángelo & Los Gadianes</h3>
+            <p>Una guerra secreta entre razas alienígenas y humanos, donde Ángelo descubre su legado ancestral.</p>
+            <a class="lia-link-btn" href="libro2.html">Leer y vivir experiencia →</a>
+          </div>
+        </article>
+
+        <!-- Libro 3 -->
+        <article class="library-card">
+          <div class="library-card-img">
+            <img alt="Ángelo & Los Artefactos Misteriosos" src="images/LIBRO3_PORTADA_PSD.png" />
+          </div>
+          <div class="library-card-body">
+            <h3>Ángelo & Los Artefactos Misteriosos</h3>
+            <p>Una travesía peligrosa en busca de artefactos cósmicos que cambiarán el destino del planeta.</p>
+            <a class="lia-link-btn" href="libro3.html">Leer y vivir experiencia →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIÓN: EL FUTURO DE LA LECTURA -->
+  <section id="vision" class="lia-vision">
+    <div class="lia-container">
+      <div class="vision-layout">
+        <div class="vision-text">
+          <div class="hero-chip">Nuestra Visión</div>
+          <h2>El futuro de la lectura es inmersivo</h2>
+          <p class="vision-desc">
+            No solo leas… vive la historia. La plataforma LIA reimagina la conexión entre el libro y el lector.
+          </p>
+          <div class="vision-features">
+            <div class="v-feature">
+              <span class="v-icon">🎧</span>
+              <div class="v-content">
+                <strong>Lectura inmersiva</strong>
+                <p>Libros con sonido envolvente y ambientación visual.</p>
+              </div>
+            </div>
+            <div class="v-feature">
+              <span class="v-icon">🎮</span>
+              <div class="v-content">
+                <strong>Gamificación</strong>
+                <p>Gana puntos y mantén tu racha diaria al leer.</p>
+              </div>
+            </div>
+            <div class="v-feature">
+              <span class="v-icon">🧠</span>
+              <div class="v-content">
+                <strong>Motor IA Celestya</strong>
+                <p>Analiza narrativas y crea ambientes en tiempo real.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vision-visual">
+          <div class="glass-mockup">
+            <div class="glass-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="glass-body">
+              <p>🎵 Reproduciendo: Tema de Tensión de "Proyecto Ditóx"</p>
+              <div class="audio-wave">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="gamification-badge">
+                🔥 Racha: 12 días | Puntos: 1540
+              </div>
+              <p class="small-info">Powered by Motor de Inteligencia Artificial Celestya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL PROYECTO / SOBRE MÍ -->
+  <section id="autor" class="lia-about">
+    <div class="lia-container">
+      <div class="about-flex">
+        <div class="about-img-container">
+          <img alt="Manuscrito y Tecnología" src="images/manuscrito_tecnologia.png" />
+          <div class="about-glow"></div>
+        </div>
+        <div class="about-content">
+          <h2>Del manuscrito a la tecnología</h2>
+          <p>
+            Soy Miguel Tovar Amaral, creador de mundos desde 2017. Escribir un libro es solo la mitad del camino.
+          </p>
+          <p>
+            <strong>El verdadero reto es lograr que alguien lo lea y se apasione por él.</strong>
+          </p>
+          <p>
+            Por eso fundé LIA. Creamos una plataforma para transformar palabras escritas en verdaderas experiencias inmersivas impulsadas por inteligencia artificial.
+          </p>
+          <div class="about-actions">
+            <a class="lia-btn lia-btn-primary" href="mailto:contacto@lasagadeangelo.com.mx">Hablemos</a>
+            <a class="lia-btn lia-btn-outline" href="https://wa.link/v0m2yz" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="lia-footer">
+    <div class="lia-container">
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img alt="LIA Logo" src="images/logo.png" />
+          <span>LIA</span>
+        </div>
+        <p class="footer-copy">© 2025 LIA – Plataforma de Creación y Lectura con IA. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <!-- LINKS LEGALES: Ocultando apps para la narrativa, pero manteniendo cumplimiento -->
+          <a href="politica-de-privacidad.html">Privacidad (Plataforma)</a>
+          <a href="celestya/privacidad.html">Privacidad (Servicios y Motor AI)</a>
+          <a href="celestya/terminos.html">Condiciones de Servicio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgerBtn = document.getElementById('burgerBtn');
+      const nav = document.querySelector('.lia-nav');
+      const navLinks = document.querySelectorAll('.lia-nav a');
+
+      burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          burgerBtn.classList.remove('active');
+          nav.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

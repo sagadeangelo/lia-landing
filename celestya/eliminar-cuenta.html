@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de cuenta y datos — Celestya</title>
+    <meta name="description"
+        content="Solicita la eliminación permanente de tu cuenta y datos en Celestya. Proceso seguro y en cumplimiento con Google Play.">
+
+    <!-- Enlace al estilo general del sitio -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Estilos específicos para esta página -->
+    <style>
+        :root {
+            --primary-color: #f39c12;
+            --bg-dark: #050816;
+            --card-bg: #0b1120;
+            --text-main: #f9fafb;
+            --text-dim: #d1d5db;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background: radial-gradient(circle at top, #1a1a2e 0%, #050816 100%);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-family: 'Emilys Candy', cursive;
+            text-shadow: 0 0 10px rgba(243, 156, 18, 0.3);
+        }
+
+        .intro-text {
+            color: var(--text-dim);
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #fff;
+            margin: 25px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .data-list {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .data-list ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-dim);
+        }
+
+        .data-list li {
+            margin-bottom: 8px;
+        }
+
+        .methods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .method-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .method-box h3 {
+            font-size: 16px;
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .method-box p {
+            font-size: 14px;
+            color: var(--text-dim);
+            margin-bottom: 0;
+        }
+
+        .form-mini {
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: var(--text-dim);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            background: #161c2d;
+            border: 1px solid #2d3748;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-color);
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-submit:hover {
+            background-color: #e67e22;
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+        }
+
+        .footer-links {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            color: #4b5563;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid #4b5563;
+            color: var(--text-dim);
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .back-home:hover {
+            border-color: #fff;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .methods {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <main class="card">
+            <div class="header">
+                <h1>Eliminación de cuenta y datos — Celestya</h1>
+                <p>Tu privacidad es nuestra prioridad</p>
+            </div>
+
+            <div class="intro-text">
+                <p>Lamentamos que quieras irte. En Celestya respetamos tu derecho al olvido. Puedes solicitar la
+                    eliminación permanente de tu cuenta y todos tus datos personales asociados en cualquier momento.</p>
+            </div>
+
+            <h2 class="section-title">¿Qué información se eliminará?</h2>
+            <div class="data-list">
+                <p>Al procesar tu solicitud, se borrarán de forma definitiva:</p>
+                <ul>
+                    <li>Tu dirección de correo electrónico y credenciales.</li>
+                    <li>Perfil completo (nombre, edad, biografía y preferencias).</li>
+                    <li>Todas las fotografías subidas a tu galería.</li>
+                    <li>Historial de mensajes e interacciones con otros usuarios.</li>
+                    <li>Datos de geolocalización y preferencias de búsqueda.</li>
+                </ul>
+                <p style="font-size: 13px; color: #9ca3af; margin-top: 15px;">
+                    * Nota: El proceso puede tardar hasta <strong>30 días naturales</strong> en completarse totalmente
+                    en nuestros sistemas y copias de seguridad.
+                </p>
+            </div>
+
+            <h2 class="section-title">Cómo solicitar la eliminación</h2>
+            <div class="methods">
+                <div class="method-box">
+                    <h3>A) Desde la aplicación</h3>
+                    <p>Ve a <strong>Configuración</strong> → <strong>Cuenta</strong> → <strong>Eliminar cuenta</strong>.
+                        Sigue los pasos y confirma.</p>
+                </div>
+                <div class="method-box">
+                    <h3>B) Por correo electrónico</h3>
+                    <p>Envía tu solicitud a <strong>celestya@lasagadeangelo.com.mx</strong> desde tu email registrado.
+                    </p>
+                </div>
+            </div>
+
+            <div class="form-mini">
+                <h2 class="section-title">Solicitud rápida por Email</h2>
+                <p style="font-size: 14px; color: var(--text-dim); margin-bottom: 20px;">
+                    Al completar este formulario, se abrirá tu cliente de correo (Gmail, Outlook, etc.) con la
+                    información lista para enviar.
+                </p>
+
+                <div class="form-group">
+                    <label for="user-email">Correo registrado en Celestya:</label>
+                    <input type="email" id="user-email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-reason">Motivo de eliminación (opcional):</label>
+                    <textarea id="user-reason" rows="2" placeholder="Cuéntanos por qué nos dejas..."></textarea>
+                </div>
+
+                <button type="button" class="btn-submit" onclick="sendDeletionEmail()">
+                    Generar solicitud de eliminación
+                </button>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://lasagadeangelo.com.mx/apps/celestya-privacidad">Política de Privacidad</a>
+                <a href="mailto:celestya@lasagadeangelo.com.mx">Contacto de Soporte</a>
+                <br>
+                <a href="https://lasagadeangelo.com.mx/" class="back-home">Volver al inicio</a>
+
+                <p class="copyright">© 2026 Celestya / La Saga de Ángelo</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function sendDeletionEmail() {
+            const emailInput = document.getElementById('user-email');
+            const reasonInput = document.getElementById('user-reason');
+
+            if (!emailInput.value) {
+                alert("Por favor, introduce el correo electrónico registrado en tu cuenta.");
+                emailInput.focus();
+                return;
+            }
+
+            const subject = encodeURIComponent("Eliminar cuenta Celestya");
+            const body = encodeURIComponent(
+                "Hola Soporte de Celestya,\n\n" +
+                "Solicito formalmente la eliminación permanente de mi cuenta y todos mis datos personales asociados.\n\n" +
+                "CORREO REGISTRADO: " + emailInput.value + "\n" +
+                "MOTIVO (OPCIONAL): " + (reasonInput.value || "No especificado") + "\n\n" +
+                "Entiendo que este proceso es irreversible y que mis datos se borrarán en un plazo máximo de 30 días.\n\n" +
+                "Saludos."
+            );
+
+            window.location.href = `mailto:celestya@lasagadeangelo.com.mx?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+
+</html>

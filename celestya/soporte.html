@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte y Contacto — Celestya</title>
+    <meta name="description"
+        content="Centro de ayuda y contacto para usuarios de Celestya. Reportar abusos, soporte técnico y consultas de privacidad.">
+
+    <style>
+        :root {
+            --brand-main: #f39c12;
+            --brand-dark: #0f172a;
+            --bg-page: #f1f5f9;
+            --text-title: #1e293b;
+            --text-para: #475569;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-para);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            color: var(--brand-main);
+            font-family: 'Emilys Candy', cursive, serif;
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .contact-email {
+            background: #fffbeb;
+            border: 1px dashed var(--brand-main);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-email a {
+            color: #d97706;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .support-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .support-item {
+            padding: 20px;
+            border-radius: 12px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .support-item h3 {
+            margin-top: 0;
+            color: var(--text-title);
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-box {
+            background: #fee2e2;
+            border: 1px solid #fecaca;
+            color: #991b1b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--brand-main);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <main class="card">
+            <div class="logo">
+                <h1>Celestya Soporte</h1>
+            </div>
+
+            <div class="contact-email">
+                <p>Escríbenos a:</p>
+                <a href="mailto:celestya@lasagadeangelo.com.mx">celestya@lasagadeangelo.com.mx</a>
+            </div>
+
+            <div class="support-grid">
+                <div class="support-item">
+                    <h3>⚙️ Soporte General</h3>
+                    <p>Si tienes problemas técnicos al usar la app, errores de carga o dudas sobre el funcionamiento de
+                        las suscripciones.</p>
+                </div>
+
+                <div class="support-item">
+                    <h3>🛡️ Reportar Abuso / Seguridad</h3>
+                    <p>Si has detectado un comportamiento inapropiado, suplantación de identidad o acoso.</p>
+                    <div class="warning-box">
+                        <strong>Seguridad Infantil:</strong> Si se trata de un caso relacionado con seguridad infantil
+                        (CSAE/CSAM), por favor reporta inmediatamente dentro de la app en el perfil del usuario y
+                        contáctanos por correo con el asunto "URGENTE: Seguridad Infantil".
+                    </div>
+                </div>
+
+                <div class="support-item">
+                    <h3>🔐 Privacidad y Datos</h3>
+                    <p>Consultas sobre cómo manejamos tus datos o solicitudes de acceso a tu información personal.</p>
+                </div>
+
+                <div class="support-item">
+                    <h3>🗑️ Eliminación de Cuenta</h3>
+                    <p>Para eliminar tu cuenta, puedes hacerlo desde Configuración → Cuenta dentro de la app o enviarnos
+                        un correo con el asunto "Eliminar cuenta".</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a href="./privacidad.html">Privacidad</a> |
+                <a href="./terminos.html">Términos</a>
+                <p>© 2026 Celestya / La Saga de Ángelo</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

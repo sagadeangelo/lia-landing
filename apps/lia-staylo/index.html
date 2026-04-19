@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>LIA-Staylo – Corrector de estilo y ortografía para autores en español</title>
+
+  <meta name="description"
+        content="LIA-Staylo es una app de corrección para autores en español. Revisa ortografía, gramática, puntuación y estilo con reglas pensadas para México y Latinoamérica. Ideal para manuscritos completos.">
+  <meta name="keywords"
+        content="LIA-Staylo, corrector de estilo para escritores, corrección ortográfica, corrección de manuscritos, español México, español latino, autores independientes, editorial, autopublicación">
+
+  <meta name="author" content="La Saga de Ángelo · Miguel Tovar" />
+
+  <!-- Actualizado al dominio real -->
+  <link rel="canonical" href="https://lasagadeangelo.com.mx/apps/lia-staylo/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LIA-Staylo – Corrector de estilo para autores en español" />
+  <meta property="og:description"
+        content="Revisa manuscritos completos en español (México y Latinoamérica) con una app de corrección pensada para autores independientes y editoriales pequeñas." />
+  <meta property="og:url" content="https://lasagadeangelo.com.mx/apps/lia-staylo/" />
+  <meta property="og:image" content="https://lasagadeangelo.com.mx/images/lia-staylo-logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LIA-Staylo – Corrector para autores" />
+  <meta name="twitter:description"
+        content="App de corrección de estilo y ortografía para manuscritos completos en español." />
+  <meta name="twitter:image" content="https://lasagadeangelo.com.mx/images/lia-staylo-logo.png" />
+
+  <!-- Datos estructurados: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "LIA-Staylo",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "BusinessApplication",
+    "description": "Aplicación de corrección de estilo, ortografía, gramática y puntuación pensada para autores de habla hispana que trabajan manuscritos completos.",
+    "creator": {
+      "@type": "Organization",
+      "name": "La Saga de Ángelo"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Miguel Tovar"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "MXN"
+    },
+    "inLanguage": [
+      "es-MX",
+      "es-419",
+      "en-US"
+    ],
+    "url": "https://lasagadeangelo.com.mx/apps/lia-staylo/"
+  }
+  </script>
+
+  <!-- Estilos globales del sitio -->
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="icon" href="../../images/favico.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet" />
+
+  <!-- Estilos específicos de la landing de LIA-Staylo -->
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    .app-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1.2rem;
+      background: #ffffff;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .app-header .logo-mini {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .app-header .logo-mini img {
+      height: 32px;
+      width: auto;
+    }
+
+    .app-header a {
+      color: #1f5fa8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .app-header a:hover {
+      text-decoration: underline;
+    }
+
+    .app-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.2rem 3.5rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero-text {
+      flex: 1 1 320px;
+      min-width: 0;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.9rem;
+      background: #123b6c;
+      color: #fff;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-highlight {
+      font-weight: 600;
+      color: #1f5fa8;
+    }
+
+    .hero-platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .btn-app-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.45rem;
+      border-radius: 999px;
+      border: none;
+      background: #1f5fa8;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-app-primary:hover {
+      background: #174a82;
+    }
+
+    .btn-app-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.3rem;
+      border-radius: 999px;
+      border: 1px solid #1f5fa8;
+      background: #fff;
+      color: #1f5fa8;
+      text-decoration: none;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .btn-app-secondary:hover {
+      background: #e6f0fb;
+    }
+
+    .hero-meta {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    /* Contenedor del video */
+    .hero-media {
+      flex: 1 1 260px;
+      min-width: 260px;
+      max-width: 420px;
+      margin-inline: auto;
+    }
+
+    .hero-media-card {
+      background: #020817;
+      border-radius: 1.6rem;
+      padding: 0.75rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .hero-media video {
+      width: 100%;
+      border-radius: 1.2rem;
+      display: block;
+      background: #000;
+    }
+
+    .hero-media-caption {
+      margin-top: 0.35rem;
+      font-size: 0.8rem;
+      color: #cfd8ff;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1.4rem;
+      font-size: 1.7rem;
+    }
+
+    .section p {
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.4rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 1.4rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 0.22rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      background: #e6f0fb;
+      color: #1f5fa8;
+      margin-right: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.1rem;
+    }
+
+    .faq-item h3 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .cta-box {
+      text-align: center;
+      background: #123b6c;
+      color: #fff;
+      border-radius: 1.4rem;
+      padding: 1.8rem 1.2rem;
+    }
+
+    .cta-box p {
+      margin-bottom: 1rem;
+    }
+
+    .cta-box a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .app-footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+      color: #444;
+    }
+
+    .app-footer a {
+      color: #1f5fa8;
+      text-decoration: none;
+    }
+
+    .app-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-media {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CABECERA LIGERA -->
+  <header class="app-header">
+    <div class="logo-mini">
+      <img src="../../images/logo.png" alt="Logo La Saga de Ángelo">
+      <span>La Saga de Ángelo · Apps</span>
+    </div>
+    <nav>
+      <a href="../../index.html">← Volver al sitio principal</a>
+    </nav>
+  </header>
+
+  <main class="app-container">
+    <!-- HERO / PORTADA -->
+    <section class="hero">
+      <div class="hero-text">
+        <div class="hero-badge" aria-label="Aplicación nueva para autores">
+          <span>Nuevo</span> · Corrector para autores en español
+        </div>
+        <h1>LIA-Staylo</h1>
+        <p class="hero-subtitle">
+          Una app de corrección pensada para
+          <span class="hero-highlight">manuscritos completos</span>, no solo textos cortos.
+          Revisa ortografía, gramática, puntuación y estilo con reglas adaptadas
+          a <strong>español (México)</strong>, <strong>español (Latinoamérica)</strong> e
+          <strong>inglés (US)</strong>.
+        </p>
+
+        <div class="hero-platforms">
+          <!-- Enlace al Microsoft Store para la app LIA-Staylo -->
+          <a class="btn-app-primary" href="https://apps.microsoft.com/detail/9pjbzk9sf26h?cid=DevShareMCLPCS&hl=en-US&gl=US" target="_blank" rel="noopener noreferrer" aria-label="Descargar LIA-Staylo para Windows">
+            🪟 Descargar para Windows
+          </a>
+          <a class="btn-app-secondary" href="#caracteristicas">
+            Ver características
+          </a>
+        </div>
+
+        <p class="hero-meta">
+          Versión actual: 0.6.x · Requiere Windows 10/11 de 64 bits.
+        </p>
+      </div>
+
+      <!-- VIDEO DEL TRAILER -->
+      <div class="hero-media">
+        <div class="hero-media-card">
+          <video
+            controls
+            preload="metadata"
+            poster="media/lia-staylo-poster.png">
+            <source src="media/lia-staylo-trailer.mp4" type="video/mp4" />
+            Tu navegador no soporta video HTML5. Puedes
+            <a href="media/lia-staylo-trailer.mp4">descargar el video aquí</a>.
+          </video>
+          <div class="hero-media-caption">
+            Trailer de LIA-Staylo – vista previa de la app en acción.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ HACE -->
+    <section class="section" id="caracteristicas">
+      <h2>¿Qué hace LIA-Staylo?</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Corrección profunda</h3>
+          <p>
+            Analiza tu manuscrito completo y detecta errores de ortografía,
+            gramática y puntuación con la ayuda de LanguageTool y reglas
+            personalizadas.
+          </p>
+          <span class="chip">Ortografía</span>
+          <span class="chip">Gramática</span>
+          <span class="chip">Puntuación</span>
+        </div>
+
+        <div class="card">
+          <h3>Enfoque en estilo narrativo</h3>
+          <p>
+            Señala muletillas, repeticiones y frases pesadas para ayudarte a lograr
+            un estilo más claro y profesional, pensado para narrativa y ensayo.
+          </p>
+          <span class="chip">Muletillas</span>
+          <span class="chip">Repeticiones</span>
+          <span class="chip">Claridad</span>
+        </div>
+
+        <div class="card">
+          <h3>Diccionario personal</h3>
+          <p>
+            Añade nombres de personajes, lugares, términos técnicos y neologismos
+            de tu universo para que no vuelvan a marcarse como errores.
+          </p>
+          <span class="chip">Universos de ficción</span>
+          <span class="chip">Terminología propia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUIÉN ES -->
+    <section class="section">
+      <h2>Hecha para autores de habla hispana</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Perfiles de idioma</h3>
+          <p>
+            LIA-Staylo trabaja con tres variantes:
+          </p>
+          <ul>
+            <li>Español (México)</li>
+            <li>Español (Latinoamérica)</li>
+            <li>Inglés (US) para fragmentos bilingües</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Ideal para…</h3>
+          <ul>
+            <li>Autores independientes que se autopublican</li>
+            <li>Pequeñas editoriales y correctores freelance</li>
+            <li>Creadores de contenido que escriben en español</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ / ESTADO DEL PROYECTO -->
+    <section class="section">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-item">
+        <h3>¿LIA-Staylo ya está en versión final?</h3>
+        <p>
+          Actualmente LIA-Staylo se encuentra en fase de pruebas para escritorio
+          (Windows). Las funciones principales de análisis y corrección ya están
+          operando, pero seguimos afinando detalles y mejorando la experiencia.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué formatos acepta?</h3>
+        <p>
+          Puedes subir manuscritos en <strong>.txt</strong>, <strong>.md</strong> y
+          <strong>.docx</strong>. El texto revisado se puede descargar de nuevo
+          en TXT, Markdown o DOCX.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cómo puedo dar retroalimentación?</h3>
+        <p>
+          Si quieres probar la app, reportar errores o sugerir nuevas funciones,
+          puedes escribir directamente por correo o WhatsApp.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA / CONTACTO -->
+    <section class="section">
+      <div class="cta-box">
+        <h2>¿Quieres probar LIA-Staylo o colaborar?</h2>
+        <p>
+          Escríbeme para recibir más información, acceso a versiones de prueba
+          o propuestas de colaboración editorial y tecnológica.
+        </p>
+        <p>
+          Email:
+          <a href="mailto:contacto@lasagadeangelo.com.mx">
+            contacto@lasagadeangelo.com.mx
+          </a>
+          · WhatsApp:
+          <a href="https://wa.link/v0m2yz" target="_blank" rel="noopener">
+            +52 878-122-3345
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div class="app-footer">
+      <p>
+        © 2025 LIA-Staylo · Parte del universo
+        <a href="../../index.html">La Saga de Ángelo</a>.
+      </p>
+    </div>
+  </main>
+</body>
+</html>

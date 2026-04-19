@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lasagadeangelo.com.mx/sitemap.xml
