@@ -1,3 +1,5 @@
+/train/challenge /train/index.html 200
+/train/challenge/ /train/index.html 200
 /train/* /train/index.html 200
 /train /train/index.html 200
 /train/ /train/index.html 200
