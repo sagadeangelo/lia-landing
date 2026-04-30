@@ -1,1 +1,3 @@
 /train/* /train/index.html 200
+/train /train/index.html 200
+/train/ /train/index.html 200
