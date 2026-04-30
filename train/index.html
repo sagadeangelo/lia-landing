@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/train/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="LIA-Train Simulator">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="lia_train">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>LIA-Train Simulator</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    body {
+      background-color: #0B0A0F; /* Estilo oscuro LIA */
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .loader-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(6, 182, 212, 0.1);
+      border-radius: 50%;
+      border-top-color: #06B6D4; /* Accent color LIA */
+      animation: spin 1s ease-in-out infinite;
+      margin-bottom: 24px;
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .loading-text {
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 1px;
+      opacity: 0.8;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="loading-indicator" class="loader-container">
+    <div class="spinner"></div>
+    <div class="loading-text">Preparando tu simulación...</div>
+  </div>
+
+  <script>
+    window.addEventListener('flutter-first-frame', function() {
+      const loader = document.getElementById("loading-indicator");
+      if (loader) {
+        loader.style.opacity = "0";
+        setTimeout(() => loader.remove(), 500);
+      }
+    });
+  </script>
+  
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
