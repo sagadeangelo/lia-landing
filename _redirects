@@ -1,6 +1,12 @@
-# Redirección de compatibilidad (Ruta Vieja -> Ruta Nueva)
-/train/* /simulador/:splat 301
+# 1. PERMITIR ARCHIVOS ESTÁTICOS (Prioridad Máxima)
+/simulador/main.dart.js /simulador/main.dart.js 200
+/simulador/flutter.js /simulador/flutter.js 200
+/simulador/assets/* /simulador/assets/:splat 200
+/simulador/canvaskit/* /simulador/canvaskit/:splat 200
 
-# Reglas para el Simulador LIA-Train (Nueva Ruta)
+# 2. RUTAS DE NAVEGACIÓN (SPA)
 /simulador/challenge/* /simulador/index.html 200
 /simulador/* /simulador/index.html 200
+
+# 3. REDIRECCIÓN DE RUTA VIEJA
+/train/* /simulador/:splat 301
