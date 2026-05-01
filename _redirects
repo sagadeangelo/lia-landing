@@ -1,5 +1,9 @@
-/train/challenge /train/index.html 200
-/train/challenge/ /train/index.html 200
+# Reglas para el Simulador LIA-Train
+/train/assets/* /train/assets/:splat 200
+/train/canvaskit/* /train/canvaskit/:splat 200
+/train/main.dart.js /train/main.dart.js 200
+/train/flutter.js /train/flutter.js 200
+
+# Redirección de navegación para rutas de Flutter
+/train/challenge/* /train/index.html 200
 /train/* /train/index.html 200
-/train /train/index.html 301
-/train/ /train/index.html 200
