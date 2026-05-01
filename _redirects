@@ -1,9 +1,3 @@
-# Reglas para el Simulador LIA-Train
-/train/assets/* /train/assets/:splat 200
-/train/canvaskit/* /train/canvaskit/:splat 200
-/train/main.dart.js /train/main.dart.js 200
-/train/flutter.js /train/flutter.js 200
-
-# Redirección de navegación para rutas de Flutter
+# Reglas mínimas para el Simulador LIA-Train
+# Esto permite que Flutter maneje sus rutas internas sin bloquear los archivos (JS, CSS, Imágenes)
 /train/challenge/* /train/index.html 200
-/train/* /train/index.html 200
