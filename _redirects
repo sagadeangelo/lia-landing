@@ -1,3 +1,6 @@
+# Redirección de compatibilidad (Ruta Vieja -> Ruta Nueva)
+/train/* /simulador/:splat 301
+
 # Reglas para el Simulador LIA-Train (Nueva Ruta)
 /simulador/challenge/* /simulador/index.html 200
 /simulador/* /simulador/index.html 200
