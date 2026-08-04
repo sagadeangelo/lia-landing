@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/blog.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/blog-kdp.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/blog-procrastinacion.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/explora-saga.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/lia.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/libro1.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/libro2.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/libro3.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/servicio-branding.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/servicio-kdp.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/servicio-epub.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lasagadeangelo.com.mx/servicio-maquetacion.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
